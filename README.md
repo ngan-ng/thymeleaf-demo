@@ -3,3 +3,5 @@
 - Thymeleaf template = HTML + Thymeleaf expressions.
 
 ![thymeleaf](/images/thymeleaf.jpg "thymeleaf")
+
+![thymeleaf-browser](/images/thymeleaf-browser.jpg "thymeleaf-browser")
