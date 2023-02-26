@@ -12,4 +12,19 @@ public class MainController {
         model.addAttribute("name", "Thymeleaf");
         return "home";  //return home.html
     }
+
+    /*
+     * Conditional Statement
+     * Elvis operator ?:
+     * If unless
+     * Switch case
+     */
+
+    @GetMapping("/elvis")
+    public String elvisExample(Model model) {
+        model.addAttribute("isAdmin", false);
+        model.addAttribute("gender","F");
+        return "elvis";
+    }
+
 }
