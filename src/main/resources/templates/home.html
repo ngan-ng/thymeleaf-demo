@@ -17,6 +17,28 @@
     <div th:with="someVariable = ${someValue}, a = 20, b = 30"> <!-- define a variable -->
         <p th:text="'Value of a*b: ' + ${a} * ${b}"></p>
     </div>
+
     <button onclick="main()" id="click-button">Click here</button>
+
+    <footer id="parent-footer" th:replace="fragment/demo :: header">
+        <h2>From Home</h2>
+    </footer>
+
+    <!-- INCLUDE -->
+    <!-- <footer id="parent-footer">
+        <h1 id="from-fragment">From fragment</h1>
+    </footer> -->
+
+    <!-- INSERT -->
+    <!-- <footer id="parent-footer">
+        <nav id="from-fragment">
+            <h1 id="from-fragment">From fragment</h1>
+        </nav>
+    </footer> -->
+
+    <!-- REPLACE -->
+    <!-- <nav id="from-fragment">
+        <h1 id="from-fragment">From fragment</h1>
+    </nav> -->
 </body>
 </html>
